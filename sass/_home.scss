@@ -1,0 +1,14 @@
+#homeIMG-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: homeIMG-start / homeIMG-end;
+
+    background-image: url(../img/avramehouse-header-2.jpg);
+}
+#homeTXT-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: homeTXT-start / homeTXT-end;
+}
+.home {
+    grid-column: content-start / content-end;
+    grid-row: homeTXT-start / homeTXT-end;
+}

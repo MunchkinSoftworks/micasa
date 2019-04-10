@@ -1,0 +1,14 @@
+#aboutUsIMG-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: aboutUsIMG-start / aboutUsIMG-end;
+
+    background-image: url(../img/sampleIMG-1.jpg);
+}
+#aboutUsTXT-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: aboutUsTXT-start / aboutUsTXT-end;
+}
+.aboutUs {
+    grid-column: content-start / content-end;
+    grid-row: aboutUsTXT-start / aboutUsTXT-end;
+}

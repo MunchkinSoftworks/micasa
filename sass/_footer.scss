@@ -1,0 +1,48 @@
+#footer-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: footer-start / footer-end;
+
+    background-color: var(--color-background-footer);
+}
+#map {
+    min-height: 40rem;
+    width: 100%;
+    height: 100%;
+
+}
+.footer {
+    padding: 5rem 0;
+    grid-column: content-start / content-end;
+    grid-row: footer-start / footer-end;
+    color: white;
+    &__textBox {
+        //padding-left: 3rem;
+        align-self: center;
+    }
+    &__p {
+        //min-width: 150px;
+    }
+    &__socialMedia {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+        grid-row-gap: 2rem;
+        padding-top: 5rem;
+        //justify-items: center;
+        //grid-row-gap: 1.5vh;
+        //align-content: start; // because we are intentionally not defining rows so that we can place as many icons here as needed, we need this line of code to group the icons together at the start otherwise they spread evenly in the parent container/ grid area.
+        
+//        position: relative; //needed to make z-index work
+//        z-index: 10;
+        &--icon {
+            width: 3.5rem;
+            height: 3.5rem;
+            fill:var(--color-grey-light-1);
+            transition: all 0.2s;
+        }
+        &--icon:hover {
+            fill:var( --color-text-white);
+            cursor: pointer;
+        } 
+    }
+}

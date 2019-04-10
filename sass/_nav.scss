@@ -1,0 +1,134 @@
+.fixed-nav {
+    position: fixed;
+}
+.nav-bg {
+    background-color: var( --color-background-nav);
+    width: 100%;
+    height: auto;
+    //height: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.nav {
+    //height: 100%;
+    //margin-bottom: rem;
+    padding-top: 2rem;   // remeber that at this point the grid is set to min content so the padding increases the grid size
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+    &__ul {
+
+        height: 100%; //make it the same height as the grid container
+        list-style-type: none; //get rid of buttlet points
+        display: flex; // to align the menu in 1 dimension 
+        flex-wrap: wrap; //makes menu wrap or no wrap
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+        
+
+    }
+    &__li{
+        flex-grow: 1;
+       //height: 100%;
+       text-align: center;
+       //text-justify: center;
+    }
+    &__a { 
+        height: 100%;
+        //align-self: center;
+        //text-align: center;
+        //text-justify: center;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 300;
+        font-size: 2rem;
+        letter-spacing: .3rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: black;
+        //padding: 0 2rem;
+        //flex-basis: content;
+        //background-color: black;
+        &:link,
+        &:visited {
+            display: inline-block;
+            //font-size: 3rem;
+            //font-weight: 300;
+            padding: 1rem 2rem;
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, black 50%);
+            background-size: 230%;
+            transition: all .4s;
+        }
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: white;
+            transform: translateX(1rem);
+        }
+    } 
+    
+}
+
+////////////// ----- stuff from natours
+.asdasda {
+&__nav {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1500;
+
+    opacity: 0;
+    width: 0;
+    transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+&__list {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+&__item {
+    margin: 1rem;
+}
+
+&__link {
+    &:link,
+    &:visited {
+        display: inline-block;
+        font-size: 3rem;
+        font-weight: 300;
+        padding: 1rem 2rem;
+        //color: $color-white;
+        text-decoration: none;
+        text-transform: uppercase;
+        //background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
+        background-size: 220%;
+        transition: all .4s;
+
+        span {
+            margin-right: 1.5rem;
+            display: inline-block;
+        }
+    }
+    
+    &:hover,
+    &:active {
+        background-position: 100%;
+        //color: $color-primary;
+        transform: translateX(1rem);
+    }
+}
+}

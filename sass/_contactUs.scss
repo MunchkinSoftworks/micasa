@@ -1,0 +1,86 @@
+#contactUsIMG-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: contactUsIMG-start / contactUsIMG-end;
+
+    background-image: url(../img/sakura-3.jpg);
+}
+#contactUsTXT-bg {
+    grid-column: marginLeft-start / marginRight-end;
+    grid-row: contactUsTXT-start / contactUsTXT-end;
+}
+#form-email {
+    grid-column: col1-start / col2-end;
+    grid-row: email-start / email-end;
+}
+#message-txt {
+    grid-column: col1-start / col2-end;
+    grid-row: messageTXT-start / messageTXT-end;
+}
+#message-box {
+    grid-column: col1-start / col2-end;
+    grid-row: messageBox-start / messageBox-end;
+}
+#submit-button {
+    grid-column: col1-start / col2-end;
+    grid-row: button-start / button-end;
+}
+
+.contactUs {
+    grid-column: content-start / content-end;
+    grid-row: contactUsTXT-start / contactUsTXT-end;
+}
+.form{
+    //grid-column: content-start / content-end;
+    //grid-row: contactUsTXT-start / contactUsTXT-end;
+    &__name {
+        grid-column: col1-start / col2-end;
+        grid-row: name-start / name-end;
+    }
+    &__email {
+        grid-column: col1-start / col2-end;
+        grid-row: email-start / email-end;
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
+        align-self: center;
+        
+    }
+    &__input {
+        padding: 1.5rem 2rem;
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        border-radius: 2px;
+        background-color: rgba(black, .7);
+        border: none;
+        border-bottom: 3px solid transparent;
+        width: 100%;
+        color: white;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba(black, .1);
+            border-bottom: 3px solid var(--menu-border-valid);
+            color: white;
+            &:invalid {
+                border-bottom: 3px solid var(--menu-border-invalid);
+            }
+        }
+
+    }
+    &__label{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-left: 2rem;
+        margin-top: 1.5rem;
+        display: block;
+        transform: translateY(4rem);
+        transition: all .3s;
+    }
+    &__input:placeholder-shown + &__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-0.1rem);
+    }
+}
