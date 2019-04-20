@@ -26,24 +26,24 @@
   --padding-right-icon: 2rem;
   --menu-border-valid: #55c57a;
   --menu-border-invalid: #eb2f64;
-  --background-img-header: url(../img/cover.jpg);
-  --background-img-whatWeDo: url(../img/what-we-do-1.jpg);
-  --background-img-aboutUs: url(../img/about-us.jpg);
-  --background-img-gallery: url(../img/menu.jpg);
-  --background-img-testimonials: url(../img/testimonials.jpg);
-  --background-img-findUs: url(../img/find-us.jpg);
-  --background-img-contactUs: url(../img/contact-us.jpg);
+  --background-img-header: url(../img/img-2k/cover-2k.jpg);
+  --background-img-whatWeDo: url(../img/img-2k/what-we-do-1.jpg);
+  --background-img-aboutUs: url(../img/img-2k/about-us.jpg);
+  --background-img-gallery: url(../img/img-2k/menu.jpg);
+  --background-img-testimonials: url(../img/img-2k/testimonials.jpg);
+  --background-img-findUs: url(../img/img-2k/find-us.jpg);
+  --background-img-contactUs: url(../img/img-2k/contact-us.jpg);
   --veil-header: rgba(0, 0, 0, 0.4);
   --veil: linear-gradient(to bottom, transparent 50%, rgba(0, 0, 0, 0.2) 75%, rgba(0, 0, 0, 0.5) 100%);
   --gallery-img-size: 35rem;
-  --gallery-img-1: url(../img/item-1.jpg);
-  --gallery-img-2: url(../img/item-2.jpg);
-  --gallery-img-3: url(../img/item-3.jpg);
-  --gallery-img-4: url(../img/item-4.jpg);
-  --gallery-img-5: url(../img/item-5.jpg);
-  --gallery-img-6: url(../img/item-6.jpg);
-  --gallery-img-7: url(../img/item-7.jpg);
-  --gallery-img-8: url(../img/item-8.jpg);
+  --gallery-img-1: url(../img/img-2k/item-1.jpg);
+  --gallery-img-2: url(../img/img-2k/item-2.jpg);
+  --gallery-img-3: url(../img/img-2k/item-3.jpg);
+  --gallery-img-4: url(../img/img-2k/item-4.jpg);
+  --gallery-img-5: url(../img/img-2k/item-5.jpg);
+  --gallery-img-6: url(../img/img-2k/item-6.jpg);
+  --gallery-img-7: url(../img/img-2k/item-7.jpg);
+  --gallery-img-8: url(../img/img-2k/item-8.jpg);
   --icon-color-default: #8A8A88;
   --icon-color-hover: #ffffff; }
 
@@ -1354,7 +1354,7 @@ blockquote cite {
   display: block; }
 
 cite img {
-  height: 5rem;
+  height: 7.5rem;
   border-radius: 50%;
   vertical-align: middle;
   padding-right: 1rem; }
