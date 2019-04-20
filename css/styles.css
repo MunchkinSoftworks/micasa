@@ -170,7 +170,7 @@ html {
     margin-top: 3rem; }
 
 .border-bottom-dark {
-  margin-bottom: 5rem; }
+  margin-bottom: 0; }
   .border-bottom-dark:after {
     display: block;
     height: 0.3rem;
@@ -179,6 +179,9 @@ html {
     width: 15rem;
     margin: 0 auto;
     margin-top: 3rem; }
+
+.margin-bottom-large {
+  margin-bottom: 3rem; }
 
 h1 {
   font-family: var(--font-family-main-h1);
@@ -1329,8 +1332,8 @@ figcaption h3 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     grid-row-gap: 7rem;
-    grid-column-gap: 2rem;
-    padding: 0 2rem;
+    grid-column-gap: 3rem;
+    padding: 0 3rem;
     color: white; }
     .testimonials__grid blockquote {
       position: relative;
@@ -1468,6 +1471,39 @@ cite img {
   grid-column: col1-start / col2-end;
   grid-row: email-start / email-end; }
 
+.form__select {
+  padding: 1.5rem 2rem;
+  font-family: var(--font-family-main-text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  color: black; }
+
+.form__button-wrapper {
+  filter: drop-shadow(0 1rem 2rem rgba(0, 0, 0, 0.5));
+  align-self: center;
+  justify-self: center;
+  width: 25%;
+  transition: all 0.2s; }
+  .form__button-wrapper:hover {
+    transform: translate3d(0, -0.5rem, 0); }
+  .form__button-wrapper:active {
+    transform: translate3d(0, 0rem, 0);
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.8)); }
+
+.form__button {
+  font-family: var(--font-family-main-text);
+  font-size: 2rem;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #67b26f, #4ca2cd);
+  padding: 1.5rem 2rem;
+  clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+  border: none;
+  color: white; }
+
 .form__text {
   font-family: var(--font-family-main-text);
   font-size: 2rem;
@@ -1478,11 +1514,11 @@ cite img {
   font-family: var(--font-family-main-text);
   font-size: 1.5rem;
   border-radius: 2px;
-  background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.99));
+  background-image: linear-gradient(to bottom right, #67b26f, #4ca2cd);
   border: none;
   border-bottom: 3px solid transparent;
   width: 100%;
-  color: white; }
+  color: black; }
   .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
@@ -1507,7 +1543,7 @@ cite img {
   transform: translateY(-0.1rem); }
 
 .form__input::placeholder {
-  color: var(--icon-fill-hover); }
+  color: black; }
 
 #footer-bg {
   grid-column: marginLeft-start / marginRight-end;

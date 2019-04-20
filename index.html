@@ -53,7 +53,7 @@
         <div id="whatWeDoVeil" class="veil"></div>
         <div id="whatWeDoTXT-bg" class="text-bg"></div>
         <section class="whatWeDo">
-            <h3 class="padding-bot-h3 padding-container-top border-bottom-dark">what we do</h3>
+            <h3 class=" padding-container-top border-bottom-dark">what we do</h3> 
             <div class="whatWeDo__wrapper padding-container-bot padding-container-top">
                 <div class="whatWeDo__wrapper--unit ">
                     <svg class="whatWeDo__icon padding-right-icon">
@@ -107,7 +107,7 @@
         <div id="galleryVeil" class="veil"></div>
         <div id="galleryTXT-bg" class="text-bg"></div>
         <section class="gallery">
-            <h3 class="padding-bot-h3 padding-container-top align-text-center border-bottom-dark">Menu</h3>
+            <h3 class="padding-bot-h3 padding-container-top align-text-center border-bottom-dark margin-bottom-large">Menu</h3>
             <div class="gallery__wrapper padding-container-bot">
                 <div class="gallery__unit">
                     <div id="galleryIMG-1" class="gallery__unit--image"></div>
@@ -165,7 +165,6 @@
                         <p class="gallery__unit-ef2--figcaption-p"> <span>Ingredients: </span>Whole wheat bread, 3 cheese blend, Mixed greens</p>
                     </figcaption>
                 </div>
-                
             </div>
         </section>
         <div id="testimonialsIMG-bg" class="fixed-img"></div>
@@ -173,7 +172,7 @@
         <div id="testimonialsTXT-bg" class="text-bg"></div>
         <section class="testimonials padding-container-bot">
             <h3 class="padding-bot-h3 padding-container-top align-text-center text-light border-bottom">what people say about us</h3>
-            <div class="testimonials__grid ">
+            <div class="testimonials__grid">
                 <blockquote>
                     I've crashed into a beet truck. Checkmate... I gave it a cold? I gave it a virus. A computer virus. Yeah, but John, if The Pirates of the Caribbean breaks down, the pirates don’t eat the tourists.
                     <cite> <img src="img/testimonial-guy.jpg" alt="">  Rico Suave Jr. the 4th</cite>
@@ -187,7 +186,6 @@
                     <cite><img src="img/testimonial-dog.jpg" alt="">Papi 'el perro' Chulo</cite>
                 </blockquote>
             </div>
-
         </section>
         <div id="findUsIMG-bg" class="fixed-img"></div>
         <div id="findUsVeil" class="veil"></div>
@@ -199,10 +197,10 @@
             </div> 
             <div class="findUs__txtBox padding-bot-h3">
                 <h3 class="padding-bot-h3 padding-container-top">come visit us</h3>
-                <h3 class="padding-bot-h3--footer">Address</h3>
+                <h4 class="padding-bot-h3--footer">Address</h4>
                 <p class="footer__p">68 Royal Hospital Rd</p>
                 <p class="footer__p padding-botTXT">Chelsea, London SW3 4HP, UK</p>
-                <h3 class="padding-bot-h3--footer" >Phone Number</h3>
+                <h4 class="padding-bot-h3--footer" >Phone Number</h4>
                 <p class="footer__p">+44 20 7352 4441</p>
             </div>
         </section>
@@ -217,14 +215,16 @@
                 <input class="form__input form__email" type="email" name="email" id="form-email" placeholder="Your Email" required>
                 <label class="form__label form__email" for="#">Email</label>
                 <label class="form__text" for="#">Reason for contacting us today</label>
-                <select class="form__input" name="model" id="house-model">
-                    <option value="bedroom-1">Catering</option>
-                    <option value="bedroom-1">Reservations</option>
-                    <option value="bedroom-1">Other</option>
+                <select class="form__select" name="model" id="house-model">
+                    <option value="reason-1">Catering</option>
+                    <option value="reason-2">Reservations</option>
+                    <option value="reason-3">Other</option>
                 </select>
                 <label id="message-txt" class="form__text" for="#">How can we help?</label>
                 <textarea class="form__input" name="message" placeholder="Leave us a message" id="message-box" cols="30" rows="10"></textarea>
-                <input id="submit-button" class="form__input" type="submit" value="Send it!">
+                <div id="submit-button" class="form__button-wrapper">
+                    <input id="" class="form__button" type="submit" value="Send it!">
+                </div>
             </form>          
         </section>
         
@@ -233,10 +233,10 @@
         <footer class="footer">
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3358.8994314459596!2d-115.44776738384007!3d32.66212028100693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d771b2920ae3e9%3A0x3be5346079befd40!2sEpicentro+Coworking+Space!5e0!3m2!1sen!2smx!4v1554851509876!5m2!1sen!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> 
             <div class="footer__textBox">
-                <h3 class="padding-bot-h3--footer">Address</h3>
+                <h4 class="padding-bot-h3--footer">Address</h4>
                 <p class="footer__p">Calle Caracas #433</p>
                 <p class="footer__p padding-botTXT">21200 Mexicali, B.C.</p>
-                <h3 class="padding-bot-h3--footer" >Phone Number</h3>
+                <h4 class="padding-bot-h3--footer" >Phone Number</h4>
                 <p class="footer__p">(686) 332-4233</p>
                 <div class="footer__socialMedia"> 
                     <svg class="footer__socialMedia--icon">
