@@ -59,6 +59,7 @@ html {
 
 .grid-container {
   display: grid;
+  overflow: hidden;
   grid-template-columns: [marginLeft-start] 1fr [marginLeft-end content-start] minmax(min-content, 2fr) [content-end marginRight-start] 1fr [marginRight-end];
   grid-template-rows: [header-start] 90vh [header-end nav-start] min-content [nav-end whatWeDoIMG-start] 100vh [whatWeDoIMG-end whatWeDoTXT-start] min-content [whatWeDoTXT-end aboutUsIMG-start] 100vh [aboutUsIMG-end aboutUsTXT-start] min-content [aboutUsTXT-end galleryIMG-start] 100vh [galleryIMG-end galleryTXT-start] min-content [galleryTXT-end testimonialsIMG-start] 100vh [testimonialsIMG-end testimonialsTXT-start] min-content [testimonialsTXT-end findUsIMG-start] 100vh [findUsIMG-end findUsTXT-start] min-content [findUsTXT-end contactUsIMG-start] 100vh [contactUsIMG-end contactUsTXT-start] min-content [contactUsTXT-end footer-start] min-content [footer-end]; }
 
@@ -508,11 +509,14 @@ figcaption h3 {
 .whatWeDo {
   grid-column: marginLeft-start / marginRight-end;
   grid-row: whatWeDoTXT-start / whatWeDoTXT-end;
-  text-align: center; }
+  text-align: center;
+  overflow: hidden; }
   .whatWeDo__wrapper {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
-    grid-row-gap: 6rem; }
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    grid-row-gap: 6rem;
+    padding-right: 2rem;
+    padding-left: 2rem; }
     .whatWeDo__wrapper--unit {
       display: grid;
       grid-template-columns: [icon-start] 1fr [icon-end text-start] 1fr [text-end]; }
@@ -1376,7 +1380,7 @@ cite img {
   grid-column: marginLeft-start / marginRight-end;
   grid-row: findUsTXT-start / findUsTXT-end;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
   position: relative; }
   .findUs:hover .findUs__link::before {
     opacity: 1;
